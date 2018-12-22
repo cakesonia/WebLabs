@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html manifest="manifest">
+
+<head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Фан</title>
+    <link rel="icon" href="images/tab_logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="fans.css">
+    
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-image: linear-gradient(120deg, #ffffff 0%, #000000 50%, #ffffff 100%);">
+            <a class="navbar-brand" href="index.html">Main</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="news.html">News</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Matches
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="matches.html">Calendar of matches</a>
+                            <a class="dropdown-item" href="#">Next game</a>
+                            <a class="dropdown-item" href="#">Ratings</a>
+                        </div>
+                    </li>
+                    <a class="nav-item nav-link" href="fans.html">Fans</a>
+                    <a class="nav-item nav-link" href="contacts.html">Contacts</a>
+                    <a class="nav-item nav-link" href="admin.html">Admin</a>
+                </div>
+            </div>
+            <div class="form-inline my-2 my-lg-0">
+                <div class="logo"></div>
+            </div>
+        </nav>
+    </header>
+    <content>
+        <div class="content" style="margin: 75 100 100 40;">
+            <h1>Fan request</h1>
+            <div class="reqests" id="feedback-container">
+                <div class="request">
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    <div class="req-footer">
+                        <div class="date">10.10.2018, 13:37</div>
+                        <div class="nickname">cakesonia</div>
+                    </div>
+                </div>
+                <div class="request">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan mi imperdiet volutpat accumsan. Sed eu velit non dolor tincidunt interdum vitae ac nunc.</p>
+                    <div class="req-footer">
+                        <div class="date">10.10.2018, 13:37</div>
+                        <div class="nickname">someone</div>
+                    </div>
+                </div>
+            </div>
+            <div class="adding-request">
+                <textarea name="textarea" placeholder="Add request..." id="feedback-text" cols="70" rows="8"></textarea>
+                <div class="btn">
+                    <button id="adding-request"  onclick="onClick()" >Send</button>
+                </div>
+            </div>
+        </div>
+    </content>
+    <footer>
+        <div class="content">
+            <div class="footer-title">Written by Sonia</div>
+        </div>
+    </footer>
+</body>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="jquery.js"></script>
+<script src="poppe.js"></script>
+<script src="js/bootstrap.js"></script>
+<!-- Own JS-->
+<script src="fans.js"></script>
+</html>
