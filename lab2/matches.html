@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" manifest="manifest">
+<html manifest="../cache.manifest">
 <head>
     <meta charset="UTF-8">
-    <title>News</title>
+    <title>Matches</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="news_style.css">
+    <link rel="stylesheet" href="matches_style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
@@ -42,38 +42,81 @@
         </nav>
     </header>
 
-    <div class="main-image"></div>
-
-	<div id="content_news">
-		<div id="content_wrapper_news">
-			<a href="https://www.chess.com/news/view/maghsoodloo-clinches-world-junior-title-with-stunning-performance" class="news_table">
-				<img src="images/news1.jpeg" alt="first news">
-				<h1>Maghsoodloo Wins World Junior Title With Stunning Performance</h1>
-			</a>
-			<a href="https://www.chess.com/news/view/kasparov-finishes-well-but-loses-match-to-topalov" class="news_table">
-				<img src="images/news2.jpeg" alt="second news">
-				<h1>Kasparov Finishes Well But Loses Match To Topalov</h1>
-			</a>
-			<a href="https://www.chess.com/news/view/strong-3rd-day-for-vachier-lagrave-in-st-louis" class="news_table">
-				<img src="images/news3.jpeg" alt="third news">
-				<h1>Strong 3rd Day For Vachier-Lagrave In St. Louis</h1>
-			</a>
-		    <a href="https://www.chess.com/news/view/makropoulos-takes-dvorkovich-to-fide-ioc-ethics-commissions" class="news_table">
-			    <img src="images/news4.jpeg" alt="forth news">
-				<h1>Makropoulos Takes Dvorkovich To FIDE, IOC Ethics Commis...</h1>
-			</a>
-		</div>
-	</div>
-
-	<div id="footer">
-		<div id="footer_wrapper">
+    <div class="container">
+        <div class="main-text">
+            <br><br>
+            <h2>Річний календар матчів</h2>
+            <br>
+            <table class="table table-borderedtable-responsive table-dark">
+                <thead>
+                <tr class="table-title">
+                    <th>
+                        &#9660; Дата матчу
+                    </th>
+                    <th>
+                        &#9660; Команда 1
+                    </th>
+                    <th>
+                        &#9660; Команда 2
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="table-column1">
+                    <td>
+                        15.04
+                    </td>
+                    <td>
+                        SK SLAVIA PRAHA
+                    </td>
+                    <td>
+                        BOCA JUNIORS
+                    </td>
+                </tr>
+                <tr class="table-column2">
+                    <td>
+                        16.07
+                    </td>
+                    <td>
+                        CHESS SCHOOL
+                    </td>
+                    <td>
+                        CHESS UNLIMITED
+                    </td>
+                </tr>
+                <tr class="table-column1">
+                    <td>
+                        14.09
+                    </td>
+                    <td>
+                        TEAM UKRAINE
+                    </td>
+                    <td>
+                        TEAM ENGLAND
+                    </td>
+                </tr>
+                <tr class="table-column2">
+                    <td>
+                        17.10
+                    </td>
+                    <td>
+                        TEAM SPAIN
+                    </td>
+                    <td>
+                        TEAM FRANCE
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <br>
+        </div>
+    </div>
+    
     <footer>
         <i><p style="text-align: center;">Thank you <a href="https://en.wikipedia.org/wiki/Chess#Strategy_and_tactics">Wikipedia</a> and <a href="https://www.chess.com/clubs/forum/view/a-brief-history-of-chess">Chess.com</a>!</p></i>
     </footer>
-		</div>
-	</div>
-</body>
 
+</body>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -83,4 +126,3 @@
         crossorigin="anonymous"></script>
 
 </html>
-

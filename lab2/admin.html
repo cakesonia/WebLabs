@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" manifest="manifest">
+<html manifest="manifest">
 <head>
     <meta charset="UTF-8">
-    <title>News</title>
+    <title>Admin page</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="news_style.css">
+    <link rel="stylesheet" href="admin_style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/poppe.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="admin.css">
+    <!-- Own JS -->
+    <script src="admin.js"></script>
 </head>
+
 <body>
+
+
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-image: linear-gradient(120deg, #ffffff 0%, #000000 50%, #ffffff 100%);">
             <a class="navbar-brand" href="index.html">Main</a>
@@ -42,38 +58,44 @@
         </nav>
     </header>
 
-    <div class="main-image"></div>
+<div>
 
-	<div id="content_news">
-		<div id="content_wrapper_news">
-			<a href="https://www.chess.com/news/view/maghsoodloo-clinches-world-junior-title-with-stunning-performance" class="news_table">
-				<img src="images/news1.jpeg" alt="first news">
-				<h1>Maghsoodloo Wins World Junior Title With Stunning Performance</h1>
-			</a>
-			<a href="https://www.chess.com/news/view/kasparov-finishes-well-but-loses-match-to-topalov" class="news_table">
-				<img src="images/news2.jpeg" alt="second news">
-				<h1>Kasparov Finishes Well But Loses Match To Topalov</h1>
-			</a>
-			<a href="https://www.chess.com/news/view/strong-3rd-day-for-vachier-lagrave-in-st-louis" class="news_table">
-				<img src="images/news3.jpeg" alt="third news">
-				<h1>Strong 3rd Day For Vachier-Lagrave In St. Louis</h1>
-			</a>
-		    <a href="https://www.chess.com/news/view/makropoulos-takes-dvorkovich-to-fide-ioc-ethics-commissions" class="news_table">
-			    <img src="images/news4.jpeg" alt="forth news">
-				<h1>Makropoulos Takes Dvorkovich To FIDE, IOC Ethics Commis...</h1>
-			</a>
-		</div>
-	</div>
+    <div class="container">
+        <div class="main-text">
+            <h2>Додати новину</h2>
 
-	<div id="footer">
-		<div id="footer_wrapper">
+            <div class="input_form">
+
+            <div class="col-md-6">
+                <img src="images/picture.svg" width="80%">
+            </div>
+
+            <form id="addPicture">
+                <label>Виберіть зображення</label>
+                <input id="news-img" type="file" class="form-control-file">
+            </form>
+            </div>
+
+            <div class="col-md-12">
+                <form id="newsForm">
+                    <input id="caption" type="text" class="form-control" placeholder="Заголовок">
+                    <br>
+                    <textarea id="text" class="form-control" rows="15" placeholder="Новина"></textarea>
+                    <br>
+                    <div class="col-lg-4">
+                    <button id="btnAdd" onclick="onClick()">Add news</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
     <footer>
         <i><p style="text-align: center;">Thank you <a href="https://en.wikipedia.org/wiki/Chess#Strategy_and_tactics">Wikipedia</a> and <a href="https://www.chess.com/clubs/forum/view/a-brief-history-of-chess">Chess.com</a>!</p></i>
     </footer>
-		</div>
-	</div>
-</body>
+    </div>
 
+</body>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -81,6 +103,4 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
 </html>
-

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" manifest="manifest">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>News</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="news_style.css">
+    <link rel="stylesheet" href="contacts_style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
@@ -42,45 +42,37 @@
         </nav>
     </header>
 
-    <div class="main-image"></div>
+    <div>
+    <div class="img-wrap">
+        <br>
+        <h1><span>Особисті контакти<br>неймовірного гравця у шахмати</span></h1>
+    </div>
+    <div class="row container">
+        <div class="main-text col-md-6">
+            <div id="right">
+                <div><span><strong>Адреса:</strong></span><span class="text"> 5-ий корпус<br>Національний університет "Львівська політехніка"<br>вулиця Степана Бандери, 28А, м. Львів, 79000, Україна</span>
+                </div>
+                <div><span><strong>Телефон:</strong></span><span class="text"> +38 095 32 44</span></div>
+                <div><span><strong>Email:</strong></span><span class="text"> chessy.lover@chess.com.ua</span></div>
+            </div>
+        </div>
 
-	<div id="content_news">
-		<div id="content_wrapper_news">
-			<a href="https://www.chess.com/news/view/maghsoodloo-clinches-world-junior-title-with-stunning-performance" class="news_table">
-				<img src="images/news1.jpeg" alt="first news">
-				<h1>Maghsoodloo Wins World Junior Title With Stunning Performance</h1>
-			</a>
-			<a href="https://www.chess.com/news/view/kasparov-finishes-well-but-loses-match-to-topalov" class="news_table">
-				<img src="images/news2.jpeg" alt="second news">
-				<h1>Kasparov Finishes Well But Loses Match To Topalov</h1>
-			</a>
-			<a href="https://www.chess.com/news/view/strong-3rd-day-for-vachier-lagrave-in-st-louis" class="news_table">
-				<img src="images/news3.jpeg" alt="third news">
-				<h1>Strong 3rd Day For Vachier-Lagrave In St. Louis</h1>
-			</a>
-		    <a href="https://www.chess.com/news/view/makropoulos-takes-dvorkovich-to-fide-ioc-ethics-commissions" class="news_table">
-			    <img src="images/news4.jpeg" alt="forth news">
-				<h1>Makropoulos Takes Dvorkovich To FIDE, IOC Ethics Commis...</h1>
-			</a>
-		</div>
-	</div>
+        <div class="col-md-6" id="map"></div>
+    </div>
 
-	<div id="footer">
-		<div id="footer_wrapper">
     <footer>
         <i><p style="text-align: center;">Thank you <a href="https://en.wikipedia.org/wiki/Chess#Strategy_and_tactics">Wikipedia</a> and <a href="https://www.chess.com/clubs/forum/view/a-brief-history-of-chess">Chess.com</a>!</p></i>
     </footer>
-		</div>
-	</div>
-</body>
 
+    </div>
+</body>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-
+    <script src="../js/google_map.js"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwMSwWFnlV81wE-4uLbjD2prtIRpIi_hw&libraries=places&callback=initMap"></script>
+        
 </html>
-
