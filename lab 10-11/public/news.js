@@ -66,7 +66,7 @@ function loadData() {
                 news.className = "news_table";
                 news.innerHTML = `
                 
-				<img src="maxresdefault.jpg" alt="second news">
+				<img src="images/logo.jpg" alt="second news">
                 <h1>${newsValue.titleInput}</h1>
                 <p>${newsValue.newsInput}<p>
 			`
@@ -103,7 +103,7 @@ function checkLocalStorage() {
                 news.className = "col-xl-3 col-md-6 col-sm-12";
                 news.innerHTML = `
                 <div class="card">
-                    <img src="https://svirtus.cdnvideo.ru/D74Box_RBQEgQ3j4UUcI2KVMQNA=/0x0:1280x720/355x200/filters:quality(90)/https://s3.eu-central-1.amazonaws.com/esforce-media/85/854438f0521464fcdad70a93d36a8e61.jpg?m=33feb0c11dcb0ad4d31b0f217f19cce9" alt="">
+                    <img src="images/logo.jpg" alt="">
                     <div class="card-content">
                         <h1>${newsValue.titleInput}</h1>
                         <p>${newsValue.newsInput}<p>
