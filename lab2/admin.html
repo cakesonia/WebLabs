@@ -1,30 +1,24 @@
 <!DOCTYPE html>
 <html manifest="manifest">
 <head>
-    <meta charset="UTF-8">
-    <title>Admin page</title>
-    <link rel="stylesheet" href="css\bootstrap.min.css">
-    <link rel="stylesheet" href="admin_style.css">
+    <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Admin page</title>
+    <link rel="icon" href="images/tab_logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery.js"></script>
-    <script src="js/poppe.js"></script>
-    <script src="js/bootstrap.js"></script>
+    
 
     <!-- Own CSS -->
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="admin.css">
-    <!-- Own JS -->
-    <script src="admin.js"></script>
+    
 </head>
-
 <body>
-
-
-    <header>
+       <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-image: linear-gradient(120deg, #ffffff 0%, #000000 50%, #ffffff 100%);">
             <a class="navbar-brand" href="index.html">Main</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -42,7 +36,6 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="matches.html">Calendar of matches</a>
                             <a class="dropdown-item" href="#">Next game</a>
-                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Ratings</a>
                         </div>
                     </li>
@@ -56,45 +49,43 @@
             </div>
         </nav>
     </header>
-
-<div>
-
-    <div class="container">
-        <div class="main-text">
-            <h2>Додати новину</h2>
-
-            <div class="input_form">
-
-            <div class="col-md-6">
-                <img src="../images/picture.svg" width="80%">
-            </div>
-
-            <form id="addPicture">
-                <label>Виберіть зображення</label>
-                <input id="news-img" type="file" class="form-control-file">
-            </form>
-            </div>
-
-            <div class="col-md-12">
-                <form id="newsForm">
-                    <input id="caption" type="text" class="form-control" placeholder="Заголовок">
-                    <br>
-                    <textarea id="text" class="form-control" rows="15" placeholder="Новина"></textarea>
-                    <br>
+    <content>
+        <section class="first">
+            <div class="content">
+                <h1>Add news</h1>
+                <div class="adding-image row">
                     <div class="col-lg-4">
-                    <button id="btnAdd" onclick="onClick()">Add news</button>
-                </form>
+                        <img id="news-image" src="../images/picture.svg" alt="">
+                    </div>
+                    <div class="col-lg-4 add-image-btn">
+                        <label for="upload-image-button">Upload image</label>
+                        <input id="upload-image-button" type="file" class="upload-image-button" required>
+                    </div>
+                </div>
             </div>
-
-        </div>
-    </div>
-
+        </section>
+        <section class="second">
+       <div class="b">
+                <div class="forms col-lg-7">
+                    <textarea id="-" name="textarea-title" placeholder="News title..." cols="30" rows="2"></textarea>
+                    <textarea id="news-text" name="textarea-text" placeholder="News description..." cols="30" rows="10"></textarea>
+                </div>
+                <div class="col-lg-4">
+                    <button id="btnAdd" onclick="onClick()">Add news</button>
+                </div>
+            </div>
+        </section>
+    </content>
+    
     <footer>
         <i><p style="text-align: center;">Thank you <a href="https://en.wikipedia.org/wiki/Chess#Strategy_and_tactics">Wikipedia</a> and <a href="https://www.chess.com/clubs/forum/view/a-brief-history-of-chess">Chess.com</a>!</p></i>
     </footer>
-    </div>
 
 </body>
+<!-- Own JS -->
+<script src="jquery.js"></script>
+<script src="poppe.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="admin.js"></script>
 
-    <script src="js\bootstrap.min.js"></script>
 </html>

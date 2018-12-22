@@ -1,5 +1,5 @@
 function initMap() {
-    var myLatLng = {lat: 49.835293, lng: 24.008873};
+    var myLatLng = {lat: 40.790074, lng: -73.882943};
 
     var map = new google.maps.Map(document.getElementById('map'), {
         center: myLatLng,
@@ -9,12 +9,12 @@ function initMap() {
     });
 
     var infoWindow = new google.maps.InfoWindow({
-        content: "Я тут живу :)"
+        content: "We are here"
     });
 
     var defaultBounds = new google.maps.LatLngBounds(
-        new google.maps.LatLng(49.7484836, 24.1373796),
-        new google.maps.LatLng(49.911466, 23.9141759));
+        new google.maps.LatLng(40.2484836, -73.0373796),
+        new google.maps.LatLng(41.011466, -74.5141759));
 
     var marker = new google.maps.Marker({
           position: myLatLng,

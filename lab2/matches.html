@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html manifest="../cache.manifest">
+<html manifest="cache.manifest">
 <head>
     <meta charset="UTF-8">
-    <title>Matches</title>
-    <link rel="stylesheet" href="css\bootstrap.min.css">
-    <link rel="stylesheet" href="matches_style.css">
+    <title>Матчі</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="matches.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
@@ -19,14 +19,13 @@
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="news.html">News</a>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="matches.html" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Matches
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="matches.html">Calendar of matches</a>
+                            <a class="dropdown-item" href="#">Calendar of matches</a>
                             <a class="dropdown-item" href="#">Next game</a>
-                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Ratings</a>
                         </div>
                     </li>
@@ -40,83 +39,78 @@
             </div>
         </nav>
     </header>
-
+<content style="margin: 20px">
     <div class="container">
         <div class="main-text">
             <br><br>
-            <h2>Річний календар матчів</h2>
+            <h2>Calendar</h2>
             <br>
-            <table class="table table-borderedtable-responsive table-dark">
+            <table class="table table-bordered table-striped table-responsive table-dark">
                 <thead>
-                <tr class="table-title">
+                <tr style="background-color: #5F9EA0">
                     <th>
-                        &#9660; Дата матчу
+                        Competition date
                     </th>
                     <th>
-                        &#9660; Команда 1
+                         Place
                     </th>
-                    <th>
-                        &#9660; Команда 2
-                    </th>
+                    
                 </tr>
                 </thead>
                 <tbody>
-                <tr class="table-column1">
+                <tr style="background-color: #7e7e7e">
                     <td>
-                        15.04
+                        15.04.2018
                     </td>
                     <td>
-                        SK SLAVIA PRAHA
+                        LA, USA
                     </td>
-                    <td>
-                        BOCA JUNIORS
-                    </td>
+                    
                 </tr>
-                <tr class="table-column2">
+                <tr style="background-color: #7e7e7e">
                     <td>
-                        16.07
+                        16.07.2018
                     </td>
                     <td>
-                        CHESS SCHOOL
+                        Egypt
                     </td>
-                    <td>
-                        CHESS UNLIMITED
-                    </td>
+    
                 </tr>
-                <tr class="table-column1">
+                <tr style="background-color: #7e7e7e">
                     <td>
-                        14.09
+                        14.09.2018
                     </td>
                     <td>
-                        TEAM UKRAINE
+                        NY, USA
                     </td>
-                    <td>
-                        TEAM ENGLAND
-                    </td>
+                    
                 </tr>
-                <tr class="table-column2">
+                <tr style="background-color: #7e7e7e">
                     <td>
-                        17.10
+                        17.10.2018
                     </td>
                     <td>
-                        TEAM SPAIN
+                        Napoli, Italy
                     </td>
-                    <td>
-                        TEAM FRANCE
-                    </td>
+                    
                 </tr>
                 </tbody>
             </table>
             <br>
         </div>
     </div>
-    
-    <footer>
-        <i><p style="text-align: center;">Thank you <a href="https://en.wikipedia.org/wiki/Chess#Strategy_and_tactics">Wikipedia</a> and <a href="https://www.chess.com/clubs/forum/view/a-brief-history-of-chess">Chess.com</a>!</p></i>
+</content>
+    <footer style="background-image: linear-gradient(120deg, #000000 0%, #ffffff 100%)">
+        Written by Sonia
     </footer>
 
 </body>
 
-    <script src="js\bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
 </html>

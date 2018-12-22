@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" manifest="manifest">
+<html manifest="manifest">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Fan page</title>
-    <link rel="stylesheet" href="css\bootstrap.min.css">
-    <link rel="stylesheet" href="fans_style.css">
+    <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Фан</title>
+    <link rel="icon" href="images/tab_logo.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -18,29 +19,26 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="fans.css">
     <!-- Own JS-->
-    <script src="fans.js"></script>
+    
 </head>
 
 <body>
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-image: linear-gradient(120deg, #ffffff 0%, #000000 50%, #ffffff 100%);">
             <a class="navbar-brand" href="index.html">Main</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="news.html">News</a>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Matches
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="matches.html">Calendar of matches</a>
                             <a class="dropdown-item" href="#">Next game</a>
-                            <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Ratings</a>
                         </div>
                     </li>
@@ -54,58 +52,39 @@
             </div>
         </nav>
     </header>
-
-    <div class="container">
-        <div id="reviewsList" class="main-text">
-            <h2>Звернення фанів</h2>
-            <div class="container">
-                <br>
-                <p>
-                <br>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
-                </p><br>
-                <span class="review-date">11.11.2018, 13:00</span>
-                <span class="review-author">FAN1</span>
+    <content>
+        <div class="content" style="margin: 75 100 100 40;">
+            <h1>Fan request</h1>
+            <div class="reqests" id="feedback-container">
+                <div class="request">
+                    <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                    <div class="req-footer">
+                        <div class="date">10.10.2018, 13:37</div>
+                        <div class="nickname">fan1</div>
+                    </div>
+                </div>
+                <div class="request">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan mi imperdiet volutpat accumsan. Sed eu velit non dolor tincidunt interdum vitae ac nunc.</p>
+                    <div class="req-footer">
+                        <div class="date">10.10.2018, 13:37</div>
+                        <div class="nickname">fan2</div>
+                    </div>
+                </div>
             </div>
-
-            <div class="divider"></div>
-
-            <div class="container">
-                <br>
-                <p>
-                <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan mi imperdiet volutpat accumsan. Sed eu velit non dolor tincidunt interdum vitae ac nunc. 
-                </p><br>
-                <span class="review-date">21.01.2018, 12:50</span>
-                <span class="review-author">FAN2</span>
-            </div>
-
-            <div class="divider"></div>
-
-            <div class="container">
-                <br>
-                <p>
-                <br>Donec tincidunt a velit nec facilisis. Proin volutpat vel dui eu mattis. Nullam a sem blandit ex placerat aliquet et nec nisl. Phasellus vel diam ultricies, sollicitudin sem eget, posuere odio. Phasellus pretium nibh vitae vestibulum lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                </p><br>       
-                <span class="review-date">10.10.2017, 03:05</span>
-                <span class="review-author">FAN3</span>
-            </div>
-
-            </div>
-
-            <div class="divider"></div>
-
             <div class="adding-request">
                 <textarea name="textarea" placeholder="Add request..." id="feedback-text" cols="70" rows="8"></textarea>
                 <div class="btn">
-                    <button onclick="onClick()">Send</button>
+                    <button id="adding-request"  onclick="onClick()" >Send</button>
                 </div>
             </div>
-    </div>
-
+        </div>
+    </content>
     <footer>
-        <i><p style="text-align: center;">Thank you <a href="https://en.wikipedia.org/wiki/Chess#Strategy_and_tactics">Wikipedia</a> and <a href="https://www.chess.com/clubs/forum/view/a-brief-history-of-chess">Chess.com</a>!</p></i>
+        <div class="content">
+            <div class="footer-title">Written by Sonia</div>
+        </div>
     </footer>
 </body>
 
-<script src="js\bootstrap.min.js"></script>
-
+<script src="fans.js"></script>
 </html>
