@@ -1,0 +1,31 @@
+CACHE MANIFEST
+
+#version 0.3
+
+CACHE:
+index.html
+admin.html
+fans.html
+news.html
+matches.html
+styles.css
+admin_style.css
+fans_style.css
+matches_style.css
+news_style.css
+images/logo.jpg
+images/main_picture.jpg
+images/news1.jpeg
+images/news2.jpeg
+images/news3.jpeg
+images/news4.jpeg
+images/picture.svg
+
+js/bootstrap.min.js
+css/bootstrap.min.css
+
+NETWORK:
+*
+
+FALLBACK:
+contacts.html error.html

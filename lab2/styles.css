@@ -14,7 +14,7 @@ header {
     padding: 10px!important;
     width: 40px;
     height: 40px;
-    background: url(images/logo.jpg) 25% 25%/ contain no-repeat;
+    background: url(../images/logo.jpg) 25% 25%/ contain no-repeat;
     animation-name: slide_rotate_unhide;
     animation-duration: 3s;
 }
@@ -24,7 +24,7 @@ header {
 .main-image {
     width: 100%;
     min-height: 500px;
-    background: url(images/main_picture.jpg) no-repeat;
+    background: url(../images/main_picture.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
